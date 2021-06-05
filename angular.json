@@ -24,8 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "src/styles.css",
+              { "input": "node_modules/devextreme/dist/css/dx.carmine.css", "bundleName": "dx.theme.carmine" },
+              { "input": "node_modules/devextreme/dist/css/dx.darkmoon.css", "bundleName": "dx.theme.darkmoon" },
+              { "input": "node_modules/devextreme/dist/css/dx.greenmist.css", "bundleName": "dx.theme.greenmist" },
+              { "input": "node_modules/devextreme/dist/css/dx.darkviolet.css", "bundleName": "dx.theme.darkviolet" },
+              { "input": "node_modules/devextreme/dist/css/dx.softblue.css", "bundleName": "dx.theme.softblue" }        
+          ],
             "scripts": []
           },
           "configurations": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularDevExpressReport"
+    }
+  },
+  "defaultProject": "AngularDevExpressReport",
+  "cli": {
+    "analytics": "edcc16dc-d152-497c-b11e-8d47eb0e452d"
+  }
 }

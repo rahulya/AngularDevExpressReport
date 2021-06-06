@@ -13,7 +13,6 @@ if(!/localhost/.test(document.location.host)) {
 export class AppComponent {
     sales: Sale[];
     dataSource: any;
-
     constructor(service: Service,private dxPivotGridModule:DxPivotGridModule) {
         this.dataSource = {
             fields: [{
@@ -44,6 +43,7 @@ export class AppComponent {
     }
 
     citySelector(data) {
+        debugger
         return data.city + ' (' + data.country + ')';
     }
 }
